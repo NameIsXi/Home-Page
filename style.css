@@ -1,0 +1,126 @@
+
+body {
+    background-color: #D8E1EA;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 60px;
+    color: #A71814;
+    text-shadow: 2px 2px 3px rgba(179, 48, 38, 0.61);
+    position: relative;
+    z-index: 1;
+    left: 20px;
+    top: 100px;
+}
+
+.main-nav {
+    position: relative;
+    z-index: 5;
+    top: -4250px;
+    left: 750px;
+    list-style: none;
+}
+
+a {   
+    text-decoration-line: none;
+    color: #EA8820;
+}
+
+li {
+    font-family: 'Lora', serif;
+    font-size: 40px;
+    font-weight: bold;
+    /*text-shadow: 2px 2px 3px rgba(196, 51, 43, 0.795);*/
+    margin: 70px;
+
+}
+
+.images {
+    height: 910px;
+    width: 700px;
+    overflow: hidden;
+    position: relative;
+    top: -3442px;
+    left: 0px;
+}
+
+.hallway {
+    z-index: 0;
+    position: relative;
+    width: 100%;
+}
+
+.elevator_area {
+    width: 100%;
+    height: 910px;
+    background-color: #FFCE3B;
+    margin: auto; 
+    position: relative;
+    top: -110px;
+}
+
+.elevator_door {
+    position: relative;
+    z-index: 2;
+    left: 700px;
+    top: -1020px;
+    width: 900px;
+    height: 904px;
+    background-color: rgb(221, 221, 221);
+    border-style: solid;
+    border-color: rgb(211, 211, 211);
+    animation-name: door_closing;
+    animation-duration: 2.5s;
+}
+
+.elevator_wall {
+    position: relative;
+    margin-right: 0;
+    z-index: 3;
+    left: 750px;
+    top: -1930px;
+    height: 903px;
+    background-color: #A71814;
+    border-style: solid;
+    border-color: rgb(148, 30, 19);
+}
+
+.elevator_panel {
+    position: relative;
+    z-index: 4;
+    top: -2700px;
+    left: 800px;
+    width: 350px;
+    height: 600px;
+    border-left: 6px solid rgb(196, 49, 35);
+    border-top: 2px solid rgb(197, 68, 56);
+    border-bottom: 1px solid rgb(199, 69, 57);
+    background-color: #B9D1E7;
+}
+
+#about_me:active { 
+    animation-name: door_closing;
+    animation-duration: 2.5s;
+}
+
+@keyframes door_closing {
+    0%   {background-color: rgb(221, 221, 221); left: 700px; top: -1020px;}
+    100% {background-color: rgb(211, 211, 211); left:0px; top: -1020px;}
+}
+
+
+#about_me {
+    position: relative;
+    top: -4100px;
+}
+
+#projects {
+    position: relative;
+    top: -3000px;
+}

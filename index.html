@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tuomas Peltonen</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="frontpage.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Hey, my name is Tuomas</h1>
+        <div class="elevator_area"></div>
+        <div class="elevator_door"></div>
+        <div class="elevator_wall"></div>
+        <div class="elevator_panel"></div>
+        <div class="images">
+            <div class="hallway">
+                <img src="hallway.png">
+            </div>
+        </div>    
+
+        <div class ="menu">
+        <ul class="main-nav">
+            <li>
+                <a href="#lobby">Lobby</a>
+            </li>
+            <li>
+                <a href="#about_me">About me</a>
+            </li>
+            <li>
+                <a href="#resume">Resume</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        </div>
+    </header>
+
+    <div id="about_me">About me</div>
+    <div id="projects">Projects</div>
+    <div id="contact">Contact</div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
