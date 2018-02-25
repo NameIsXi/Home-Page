@@ -1,2 +1,2 @@
-# Home-Page
-My home page
+# Peronal Home-Page
+Work in progress, not high priority currently.
